@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d7ccc8;
+}
+
+#hoop {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+#ball {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #ff7043; /* Змініть колір м'яча відповідно до спортивного напрямку */
+    border-radius: 50%;
+}
+
+.trail {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 112, 67, 0.5); /* Колір сліду */
+    border-radius: 50%;
+    transition: all 0.1s ease-out;
+}
